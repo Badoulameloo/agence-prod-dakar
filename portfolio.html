@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dakar Prod</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .portfolio-item:hover .overlay { opacity: 1; }
+        .portfolio-item img { transition: transform 0.5s ease; }
+        .portfolio-item:hover img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-[#0A192F] text-white font-['Inter']">
+
+    <nav class="w-full z-50 flex justify-between items-center px-6 md:px-16 py-6 border-b border-white/10">
+        <div class="text-xl font-black uppercase tracking-tighter">DAKAR<span class="text-blue-500">PROD</span></div>
+        <ul class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest">
+            <li><a href="index.html" class="hover:text-blue-400">Accueil</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+            <li><a href="portfolio.html" class="text-blue-400">Portfolio</a></li>
+            <li><a href="contact.html" class="bg-white text-[#0A192F] px-5 py-2 hover:bg-blue-500 hover:text-white transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-4">Nos Réalisations</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto italic">Découvrez nos derniers films, documentaires et productions institutionnelles à travers le continent.</p>
+    </header>
+
+    <section class="pb-24 px-4 md:px-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
+                <img src="assets/img/projet1.jpg" alt="Film 1" class="w-full h-full object-cover opacity-70">
+                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
+                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Documentaire</span>
+                    <h3 class="text-2xl font-black uppercase mb-4">L'Âme du Sahel</h3>
+                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
+                <img src="assets/img/projet2.jpg" alt="Film 2" class="w-full h-full object-cover opacity-70">
+                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
+                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Corporate</span>
+                    <h3 class="text-2xl font-black uppercase mb-4">Emergence Dakar 2026</h3>
+                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
+                <img src="assets/img/projet3.jpg" alt="Film 3" class="w-full h-full object-cover opacity-70">
+                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
+                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Série TV</span>
+                    <h3 class="text-2xl font-black uppercase mb-4">Rythmes Urbains</h3>
+                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <footer class="bg-white text-[#0A192F] py-10 text-center text-sm font-bold uppercase tracking-widest">
+        <p>Prêt à lancer votre projet ? <a href="contact.html" class="text-blue-600 underline ml-2">Parlons-en</a></p>
+    </footer>
+
+</body>
+</html>
