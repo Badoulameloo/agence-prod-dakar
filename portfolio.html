@@ -3,67 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Dakar Prod</title>
+    <title>Portfolio | SYUI Production Dakar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        .portfolio-item:hover .overlay { opacity: 1; }
-        .portfolio-item img { transition: transform 0.5s ease; }
-        .portfolio-item:hover img { transform: scale(1.1); }
+        .group:hover img { transform: scale(1.05); }
+        .overlay { background: linear-gradient(to top, #0A192F, transparent); }
     </style>
 </head>
 <body class="bg-[#0A192F] text-white font-['Inter']">
 
-    <nav class="w-full z-50 flex justify-between items-center px-6 md:px-16 py-6 border-b border-white/10">
-        <div class="text-xl font-black uppercase tracking-tighter">DAKAR<span class="text-blue-500">PROD</span></div>
-        <ul class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest">
-            <li><a href="index.html" class="hover:text-blue-400">Accueil</a></li>
-            <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+    <nav class="w-full z-50 flex justify-between items-center px-6 md:px-16 py-6 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter uppercase">SYUI<span class="text-blue-500">.</span></div>
+        <ul class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em]">
+            <li><a href="index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+            <li><a href="a-propos.html" class="hover:text-blue-400 transition">À Propos</a></li>
+            <li><a href="services.html" class="hover:text-blue-400 transition">Services</a></li>
             <li><a href="portfolio.html" class="text-blue-400">Portfolio</a></li>
             <li><a href="contact.html" class="bg-white text-[#0A192F] px-5 py-2 hover:bg-blue-500 hover:text-white transition">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="py-16 px-6 text-center">
-        <h1 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-4">Nos Réalisations</h1>
-        <p class="text-gray-400 max-w-2xl mx-auto italic">Découvrez nos derniers films, documentaires et productions institutionnelles à travers le continent.</p>
+    <header class="py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">Réalisations</h1>
+        <p class="text-gray-400 font-light tracking-[0.2em] uppercase text-xs italic">Capturer l'instant, raconter l'histoire.</p>
     </header>
 
-    <section class="pb-24 px-4 md:px-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section class="px-4 md:px-10 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
-                <img src="assets/img/projet1.jpg" alt="Film 1" class="w-full h-full object-cover opacity-70">
-                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
-                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Documentaire</span>
-                    <h3 class="text-2xl font-black uppercase mb-4">L'Âme du Sahel</h3>
-                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+            <div class="group relative overflow-hidden aspect-video bg-black cursor-pointer">
+                <img src="assets/img/projet-1.jpg" alt="Documentaire" class="w-full h-full object-cover opacity-60 transition-transform duration-700">
+                <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 text-[10px] font-bold tracking-widest uppercase mb-2">Documentaire</span>
+                    <h3 class="text-2xl font-black uppercase leading-tight">L'impact social à Dakar</h3>
+                    <p class="text-sm text-gray-300 mt-2 font-light">Une immersion au cœur des réalités locales.</p>
                 </div>
             </div>
 
-            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
-                <img src="assets/img/projet2.jpg" alt="Film 2" class="w-full h-full object-cover opacity-70">
-                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
-                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Corporate</span>
-                    <h3 class="text-2xl font-black uppercase mb-4">Emergence Dakar 2026</h3>
-                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+            <div class="group relative overflow-hidden aspect-video bg-black cursor-pointer">
+                <img src="assets/img/projet-2.jpg" alt="Clip Musical" class="w-full h-full object-cover opacity-60 transition-transform duration-700">
+                <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 text-[10px] font-bold tracking-widest uppercase mb-2">Musique</span>
+                    <h3 class="text-2xl font-black uppercase leading-tight">Afrobeats Vision</h3>
+                    <p class="text-sm text-gray-300 mt-2 font-light">Esthétique urbaine et rythmes visuels.</p>
                 </div>
             </div>
 
-            <div class="portfolio-item relative overflow-hidden bg-black aspect-video group cursor-pointer">
-                <img src="assets/img/projet3.jpg" alt="Film 3" class="w-full h-full object-cover opacity-70">
-                <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 p-6 text-center">
-                    <span class="text-blue-400 text-xs font-bold tracking-[.3em] uppercase mb-2">Série TV</span>
-                    <h3 class="text-2xl font-black uppercase mb-4">Rythmes Urbains</h3>
-                    <button class="border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-blue-900 transition">Regarder</button>
+            <div class="group relative overflow-hidden aspect-video bg-black cursor-pointer">
+                <img src="assets/img/projet-3.jpg" alt="Corporate" class="w-full h-full object-cover opacity-60 transition-transform duration-700">
+                <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 text-[10px] font-bold tracking-widest uppercase mb-2">Institutionnel</span>
+                    <h3 class="text-2xl font-black uppercase leading-tight">Innovation Sénégal</h3>
+                    <p class="text-sm text-gray-300 mt-2 font-light">Valorisation de l'image de marque.</p>
                 </div>
             </div>
 
             </div>
     </section>
 
-    <footer class="bg-white text-[#0A192F] py-10 text-center text-sm font-bold uppercase tracking-widest">
-        <p>Prêt à lancer votre projet ? <a href="contact.html" class="text-blue-600 underline ml-2">Parlons-en</a></p>
+    <footer class="py-10 text-center text-[10px] tracking-widest uppercase opacity-40">
+        © 2026 SYUI Production - Sénégal.
     </footer>
 
 </body>
